@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpStudy.Game", "CsharpStudy.Game\CsharpStudy.Game.csproj", "{B9B292B8-A726-4BC2-949A-F6DBBE2E9DDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpStudy.Asset", "CsharpStudy.Asset\CsharpStudy.Asset.csproj", "{2FE70544-BD52-44AB-868B-72D036418F75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9B292B8-A726-4BC2-949A-F6DBBE2E9DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B292B8-A726-4BC2-949A-F6DBBE2E9DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B292B8-A726-4BC2-949A-F6DBBE2E9DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B292B8-A726-4BC2-949A-F6DBBE2E9DDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FE70544-BD52-44AB-868B-72D036418F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE70544-BD52-44AB-868B-72D036418F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE70544-BD52-44AB-868B-72D036418F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE70544-BD52-44AB-868B-72D036418F75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
