@@ -30,7 +30,7 @@ public class Program01Test
             }
         }
         
-        Assert.That(programTest01.isConsonant(1), Is.EqualTo(true));
+        Assert.That(programTest01.isConsonant(0), Is.EqualTo(true));
         
         
         
