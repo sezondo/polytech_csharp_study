@@ -1,4 +1,4 @@
-﻿using CsharpStudy.Debug;
+using CsharpStudy.Debug;
 
 public class YukymController
 {
