@@ -75,7 +75,7 @@ class Program
             // 5. 밀라노에 거래자가 있는가?
             Console.WriteLine("\n5번 문제에 대한 답변");
             if (transactions.Select(transactions => transactions.Trader.City)
-                .Any(City => City == "Milano"))
+                .Any(City => City == "Milan"))
             {
                 Console.WriteLine("밀라노에는 거래자가 있습니다.");
             }
