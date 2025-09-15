@@ -20,4 +20,10 @@ public class PostRepositoryTest
         Pokemon pokemon = await postRepository.GetPokemonByNameAsync("Snorlax");
         Assert.That(pokemon,Is.Not.Null);
     }
+
+    [Test]
+    public void METHOD()
+    {
+        
+    }
 }
