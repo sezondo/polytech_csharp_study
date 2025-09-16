@@ -35,6 +35,10 @@ public class PostRepository : IPokemonRepository
                 case 404:
                     Console.Write("404");
                     return new Result<Pokemon, PokemonError>.Error(PokemonError.NotFound);
+                case -99:
+                    return new Result<Pokemon, PokemonError>.Error(PokemonError.TimeoutException);
+                case -98:
+                    return new Result<Pokemon, PokemonError>.Error(PokemonError.JsonSerializationException);
                 default:
                     Console.Write("모르는놈");
                     return new Result<Pokemon, PokemonError>.Error(PokemonError.UnknownError);

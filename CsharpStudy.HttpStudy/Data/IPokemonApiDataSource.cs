@@ -1,4 +1,4 @@
-using CsharpStudy.Http.DataSources;
+using CsharpStudy.HttpStudy.DataSources;
 using CsharpStudy.HttpStudy.DTO;
 
 namespace CsharpStudy.HttpStudy.Data;

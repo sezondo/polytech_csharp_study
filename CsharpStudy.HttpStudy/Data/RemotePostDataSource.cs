@@ -1,4 +1,4 @@
-using CsharpStudy.Http.DataSources;
+using CsharpStudy.HttpStudy.DataSources;
 using CsharpStudy.HttpStudy.DTO;
 using Newtonsoft.Json;
 
@@ -17,10 +17,10 @@ public class RemotePostDataSource : IPokemonApiDataSource
     public async Task<Response<PokemonDto>> GetPokemonAsync(string pokemonName)
     {
         var response = await _httpClient.GetAsync($"{BaseUrl}/{pokemonName}");
-        Console.WriteLine($"HTTP {(int)response.StatusCode}");
+        //Console.WriteLine($"HTTP {(int)response.StatusCode}");
 
         var jsonString = await response.Content.ReadAsStringAsync();
-        Console.WriteLine($"Body: {jsonString.Substring(0, Math.Min(200, jsonString.Length))}");
+        //Console.WriteLine($"Body: {jsonString.Substring(0, Math.Min(200, jsonString.Length))}");
 
 
         var headers = response.Headers.ToDictionary(
@@ -33,7 +33,7 @@ public class RemotePostDataSource : IPokemonApiDataSource
         {
             body = JsonConvert.DeserializeObject<PokemonDto>(jsonString);
         }
-
+        
         return new Response<PokemonDto>(
             statusCode: (int)response.StatusCode,
             headers: headers,
