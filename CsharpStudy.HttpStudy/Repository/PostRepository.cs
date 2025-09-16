@@ -7,9 +7,9 @@ namespace CsharpStudy.HttpStudy.Repository;
 
 public class PostRepository : IPokemonRepository
 {
-    private IPokemonApiDataSource<Pokemon> _dataSource;
+    private IPokemonApiDataSource _dataSource;
     
-    public PostRepository(IPokemonApiDataSource<Pokemon> dataSource)
+    public PostRepository(IPokemonApiDataSource dataSource)
     {
         _dataSource = dataSource;
     }
@@ -30,15 +30,19 @@ public class PostRepository : IPokemonRepository
                 case 200:
                     var dto = response.Body;
                     Pokemon pokemon = Manpper.ToModel(dto);
+                    Console.Write("잘댐");
                     return new Result<Pokemon, PokemonError>.Success(pokemon);
                 case 404:
+                    Console.Write("404");
                     return new Result<Pokemon, PokemonError>.Error(PokemonError.NotFound);
                 default:
+                    Console.Write("모르는놈");
                     return new Result<Pokemon, PokemonError>.Error(PokemonError.UnknownError);
             }
         }
         catch (Exception e)
         {
+            Console.Write("null");
             return null;
         }
     }
