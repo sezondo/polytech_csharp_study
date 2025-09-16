@@ -23,6 +23,6 @@ public class RemotePostDataSource : ISubwayApiDataSource
         var json = await resp.Content.ReadAsStringAsync();
         var jo = JObject.Parse(json); // Newtonsoft.Json (Json.NET) 라이브러리에서 제공하는 동적 JSON 객체 타입
         
-        return new BarvlDt(jo["realtimeArrivalList"]?[0]?["arvlMsg3"]?.ToString());
+        return new BarvlDt(jo["realtimeArrivalList"]?[0]?["arvlMsg3"]?.ToString()); //arvlMsg3 이게 목적지
     }
 }
